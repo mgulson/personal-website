@@ -10,8 +10,12 @@ class Resume extends React.Component  {
           <img className="headshot" src={Headshot} alt="Michael Gulson headshot" width="300" height="400"></img>
         </Grid>
         <Grid item xs={8}>
-          <h1> Michael Gulson's Website</h1>
+          <h1> Michael Gulson</h1>
           <h2> Software Engineer</h2>
+          <span>msgulson@gmail.com 8473238610</span>
+          <br></br>
+          <h2>Work Experience</h2>
+          
         </Grid>
       </Grid>
     </>
