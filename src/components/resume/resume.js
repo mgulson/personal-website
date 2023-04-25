@@ -1,6 +1,7 @@
 import React from 'react';
 import Headshot from '../../img/michael-gulson-headshot.JPG'
 import Grid from '@mui/material/Grid'
+import './Resume.css'
 class Resume extends React.Component  {
   render() {
     return(
@@ -15,7 +16,7 @@ class Resume extends React.Component  {
           <span>msgulson@gmail.com 8473238610</span>
           <br></br>
           <h2>Work Experience</h2>
-          
+
         </Grid>
       </Grid>
     </>
