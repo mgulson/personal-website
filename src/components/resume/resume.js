@@ -16,7 +16,11 @@ class Resume extends React.Component  {
           <span>msgulson@gmail.com 8473238610</span>
           <br></br>
           <h2>Work Experience</h2>
-
+          <h3 className='company'>Optoro</h3> <span>Nov 2021 - Present</span>
+          <br></br> <br></br>
+          <h3 className='company'>Faraday Software</h3> <span>Sep 2020 - Nov 2021</span>
+          <br></br><br></br>
+          <h3 className='company'>Special Fitness</h3> <span>May 2020 - Sep 2020</span>
         </Grid>
       </Grid>
     </>
