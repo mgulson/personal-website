@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Headshot from '../../img/michael-gulson-headshot.JPG'
 import Grid from '@mui/material/Grid'
 import './Resume.css'
@@ -21,6 +22,11 @@ class Resume extends React.Component  {
           <h3 className='company'>Faraday Software</h3> <span>Sep 2020 - Nov 2021</span>
           <br></br><br></br>
           <h3 className='company'>Special Fitness</h3> <span>May 2020 - Sep 2020</span>
+          <br></br>
+          <br></br>
+          <Link to={{ pathname: "https://www.linkedin.com/in/michael-gulson-578270111"}} target='_blank'>LinkedIn</Link>
+          <span>                                                          </span>
+          <Link to={{ pathname: 'https://www.github.com/michaelgulson'}} target="_blank">Github</Link>
         </Grid>
       </Grid>
     </>
