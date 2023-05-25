@@ -24,9 +24,9 @@ class Resume extends React.Component  {
           <h3 className='company'>Special Fitness</h3> <span>May 2020 - Sep 2020</span>
           <br></br>
           <br></br>
-          <Link to={{ pathname: "https://www.linkedin.com/in/michael-gulson-578270111"}} target='_blank'>LinkedIn</Link>
+          <a href="https://www.linkedin.com/in/michael-gulson-578270111" target="_blank">LinkedIn</a>
           <span>                                                          </span>
-          <Link to={{ pathname: 'https://www.github.com/michaelgulson'}} target="_blank">Github</Link>
+          <a href="https://www.github.com/michaelgulson" target="_blank">Github</a>
         </Grid>
       </Grid>
     </>
