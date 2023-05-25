@@ -8,10 +8,10 @@ class Resume extends React.Component  {
     return(
       <>
       <Grid container spacing={2}>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <img className="headshot" src={Headshot} alt="Michael Gulson headshot" width="300" height="400"></img>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12} md={8}>
           <h1> Michael Gulson</h1>
           <h2> Software Engineer</h2>
           <span>msgulson@gmail.com 8473238610</span>
