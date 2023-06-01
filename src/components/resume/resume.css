@@ -1,6 +1,8 @@
 img.headshot{
   width: '100%';
   height: 'auto';
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 h1 {
@@ -28,4 +30,21 @@ a {
 /* Change link color on hover */
 a:hover {
   color: #1a5c90; /* Set the color of your links on hover */
+}
+
+.mobile-image {
+  /*center */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-text {
+  display: inline-block; 
+  text-align: left;
 }
