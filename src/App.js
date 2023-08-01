@@ -11,6 +11,7 @@ class App extends React.Component {
     return(
       <Routes>
         <Route path="/" element={<Resume/>} />
+        <Route path="/personal-website" element={<Resume/>} />
         <Route path="/coding-languages" element={<CodingLanguages/>}/>
       </Routes>
     )

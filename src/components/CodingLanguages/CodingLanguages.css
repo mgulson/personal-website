@@ -1,6 +1,10 @@
-.{
+* {
   color: white;
 }
 
 input, label {display:block}
 input {margin-bottom:18px;}
+
+button {
+  color: black
+}
