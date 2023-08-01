@@ -33,10 +33,22 @@ class CodingLanguages extends React.Component  {
             this.mySubmit(values.id)
           }}>
             <Form>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Javascript</label>
               <Field name="id" type="radio" value="1" />
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Java</label>
               <Field name="id" type="radio" value="2"/>
+              <label htmlFor="name">Python</label>
+              <Field name="id" type="radio" value="3" />
+              <label htmlFor="email">C</label>
+              <Field name="id" type="radio" value="4"/>              
+              <label htmlFor="name">C++</label>
+              <Field name="id" type="radio" value="5" />
+              <label htmlFor="email">Ruby</label>
+              <Field name="id" type="radio" value="6"/>
+              <label htmlFor="name">Go</label>
+              <Field name="id" type="radio" value="7" />
+              <label htmlFor="email">C#</label>
+              <Field name="id" type="radio" value="8"/>
               <button type="submit">Submit</button>
             </Form>
           </Formik>
