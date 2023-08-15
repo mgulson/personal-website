@@ -9,9 +9,8 @@ import { Routes, Route } from "react-router-dom";
 class App extends React.Component {
   render() {
     return(
-      <Routes>
+      <Routes basename={'/personal-website'}>
         <Route path="/" element={<Resume/>} />
-        <Route path="/personal-website" element={<Resume/>} />
         <Route path="/coding-languages" element={<CodingLanguages/>}/>
       </Routes>
     )
