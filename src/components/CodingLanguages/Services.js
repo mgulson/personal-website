@@ -2,7 +2,7 @@
 export let codingLanguagesURL = 'https://coding-languages.fly.dev'
 
 export function getCodingLanguages(){
-  return fetch(codingLanguagesURL + '/languages', { mode: 'no-cors'})
+  return fetch(codingLanguagesURL + '/languages').then((response) => response.json())
 }
 
 

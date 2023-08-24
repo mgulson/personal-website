@@ -6,14 +6,18 @@ import { getCodingLanguages } from './Services.js'
 class CodingLanguages extends React.Component  {
   constructor(props){
     super(props)
-    this.state = { languageId: null}
+    this.state = { selectedLanguageId: null}
+  }
+
+  async componentDidMount(){
+    let result = await getCodingLanguages()
+
+    this.setState({ languages: result, selectedLanguageId: null } )
+    console.log(this.state)
   }
 
   async mySubmit(id){
-    let result = await getCodingLanguages()
-
-    console.log(result)
-    console.log(result.body)
+    this.setState({selectedLanguageId: id, languages: this.state.languages})
   }
 
 
@@ -27,6 +31,11 @@ class CodingLanguages extends React.Component  {
         <p>
           select your favorite coding language
         </p>
+        
+        <>
+          {this.state.languages.map((language) => language.name)}
+        </>
+
         <Formik
           initialValues={{ languageId: null}}
           onSubmit={ (values) => {
