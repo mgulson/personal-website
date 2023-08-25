@@ -33,7 +33,7 @@ class CodingLanguages extends React.Component  {
         </p>
         
         <>
-          {this.state.languages.map((language) => language.name)}
+          {this.state.languages?.map((language) => language.name)}
         </>
 
         <Formik
