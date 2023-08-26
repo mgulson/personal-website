@@ -7,5 +7,8 @@ export function getCodingLanguages(){
 
 
 export function postCodingLanguage(id) {
-
+  return fetch(codingLanguagesURL + '/languages', {
+    method: "POST",
+    body: {}
+  })
 }

@@ -43,44 +43,28 @@ class CodingLanguages extends React.Component  {
         </p>
 
         <form onSubmit={this.formSubmit}>
-        <div className="radio">
-          <label>
-            Male
-            <input
-              type="radio"
-              value="Male"
-              checked={this.state.selectedOption === "Male"}
-              onChange={this.onValueChange}
-            />
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            Female
-            <input
-              type="radio"
-              value="Female"
-              checked={this.state.selectedOption === "Female"}
-              onChange={this.onValueChange}
-            />
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            Other
-            <input
-              type="radio"
-              value="Other"
-              checked={this.state.selectedOption === "Other"}
-              onChange={this.onValueChange}
-            />
-            Other
-          </label>
-        </div>
-        <div>
-          Selected option is : {this.state.selectedOption}
-        </div>
-        <button className="btn btn-default" type="submit">
+
+          {
+                this.state.languages?.map((language, index) =>
+                  {
+
+                    return(
+                      <>
+                        <label>
+                            {language.name}
+                            <input
+                              type="radio"
+                              value={index}
+                              checked={this.state.selectedOption === String(index)}
+                              onChange={this.onValueChange}
+                            />
+                        </label>
+                      </>
+                    )
+                  }
+                )
+              }
+        <button type="submit">
           Submit
         </button>
       </form>
