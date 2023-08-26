@@ -13,14 +13,24 @@ class CodingLanguages extends React.Component  {
     let result = await getCodingLanguages()
 
     this.setState({ languages: result, selectedLanguageId: null } )
-    console.log(this.state)
+    this.onValueChange = this.onValueChange.bind(this);
+    this.formSubmit = this.formSubmit.bind(this);
   }
 
   async mySubmit(id){
     this.setState({selectedLanguageId: id, languages: this.state.languages})
   }
 
+  onValueChange(event) {
+    this.setState({
+      selectedOption: event.target.value
+    });
+  }
 
+  formSubmit(event) {
+    event.preventDefault();
+    console.log(this.state.selectedOption)
+  }
 
   render() {
 
@@ -31,37 +41,35 @@ class CodingLanguages extends React.Component  {
         <p>
           select your favorite coding language
         </p>
-        
-        <>
-          {this.state.languages?.map((language) => language.name)}
-        </>
 
-        <Formik
-          initialValues={{ languageId: null}}
-          onSubmit={ (values) => {
-            this.mySubmit(values.id)
-          }}>
-            <Form>
-              <label htmlFor="name">Javascript</label>
-              <Field name="id" type="radio" value="1" />
-              <label htmlFor="email">Java</label>
-              <Field name="id" type="radio" value="2"/>
-              <label htmlFor="name">Python</label>
-              <Field name="id" type="radio" value="3" />
-              <label htmlFor="email">C</label>
-              <Field name="id" type="radio" value="4"/>              
-              <label htmlFor="name">C++</label>
-              <Field name="id" type="radio" value="5" />
-              <label htmlFor="email">Ruby</label>
-              <Field name="id" type="radio" value="6"/>
-              <label htmlFor="name">Go</label>
-              <Field name="id" type="radio" value="7" />
-              <label htmlFor="email">C#</label>
-              <Field name="id" type="radio" value="8"/>
-              <button type="submit">Submit</button>
-            </Form>
-          </Formik>
-        </>
+        <form onSubmit={this.formSubmit}>
+
+          {
+                this.state.languages?.map((language, index) =>
+                  {
+
+                    return(
+                      <>
+                        <label>
+                            {language.name}
+                            <input
+                              type="radio"
+                              value={index}
+                              checked={this.state.selectedOption === String(index)}
+                              onChange={this.onValueChange}
+                            />
+                        </label>
+                      </>
+                    )
+                  }
+                )
+              }
+        <button type="submit">
+          Submit
+        </button>
+      </form>
+
+      </>
     )
   }
 }
