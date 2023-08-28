@@ -37,37 +37,42 @@ class CodingLanguages extends React.Component  {
     return(
       <>
 
-        <h1>Coding Languages</h1>
-        <p>
+        <h1 className='center'>Coding Languages</h1>
+        <p className='center'>
           select your favorite coding language
         </p>
+        <div className='center-form'>
+        <div className='center-text'>
+          <form onSubmit={this.formSubmit}>
 
-        <form onSubmit={this.formSubmit}>
+            {
+                  this.state.languages?.map((language, index) =>
+                    {
 
-          {
-                this.state.languages?.map((language, index) =>
-                  {
-
-                    return(
-                      <>
-                        <label>
-                            {language.name}
-                            <input
-                              type="radio"
-                              value={index}
-                              checked={this.state.selectedOption === String(index)}
-                              onChange={this.onValueChange}
-                            />
-                        </label>
-                      </>
-                    )
-                  }
-                )
-              }
-        <button type="submit">
-          Submit
-        </button>
-      </form>
+                      return(
+                        <>
+                        <div className='form-row'>
+                          <label>
+                          <input
+                                type="radio"
+                                value={index}
+                                checked={this.state.selectedOption === String(index)}
+                                onChange={this.onValueChange}
+                              />
+                              {language.name}
+                          </label>
+                          </div>
+                        </>
+                      )
+                    }
+                  )
+                }
+          <button className='form-submit' type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+      </div>
 
       </>
     )
