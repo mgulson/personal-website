@@ -1,5 +1,6 @@
 import React from 'react';
 import Resume from './components/Resume/Resume';
+import Results from './components/Results/Results'
 import CodingLanguages from './components/CodingLanguages/CodingLanguages';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
@@ -12,6 +13,7 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<Resume/>} />
           <Route path="/coding-languages" element={<CodingLanguages/>}/>
+          <Route path="/coding-languages/results" element={<Results/>}/>
         </Routes>
       </BrowserRouter>  
     )
