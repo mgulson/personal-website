@@ -6,7 +6,7 @@ class Results extends React.Component  {
   }
   
 componentDidMount(){
-  
+
 }
 
   render() {
@@ -20,4 +20,4 @@ componentDidMount(){
   }
 }
 
-export default Res;
+export default Results;
