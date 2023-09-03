@@ -20,4 +20,4 @@ componentDidMount(){
   }
 }
 
-export default Res;
+export default Results;
