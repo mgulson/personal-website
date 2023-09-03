@@ -37,8 +37,8 @@ class CodingLanguages extends React.Component  {
     return(
       <>
 
-        <h1 className='center'>Coding Languages</h1>
-        <p className='center'>
+        <h1 className='center-coding-languages'>Coding Languages</h1>
+        <p className='center-coding-languages'>
           select your favorite coding language
         </p>
         <div className='center-form'>
