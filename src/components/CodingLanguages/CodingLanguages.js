@@ -56,8 +56,8 @@ class CodingLanguages extends React.Component  {
                           <label>
                           <input
                                 type="radio"
-                                value={index}
-                                checked={this.state.selectedOption === String(index)}
+                                value={index + 1}
+                                checked={this.state.selectedOption === String(index + 1)}
                                 onChange={this.onValueChange}
                               />
                               {language.name}
