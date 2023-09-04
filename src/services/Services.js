@@ -20,3 +20,7 @@ export async function postCodingLanguage(id) {
   })
   return await response.json()
 }
+
+export async function getVoteCount(){
+  return fetch(codingLanguagesURL + '/votes').then((response) => response.json())
+}
