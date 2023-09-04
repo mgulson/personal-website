@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Field, Form } from "formik";
 import  './CodingLanguages.css'
-import { getCodingLanguages } from './Services.js'
+import { getCodingLanguages, postCodingLanguage, postCodingLanguageAxios } from '../../services/Services'
 
 class CodingLanguages extends React.Component  {
   constructor(props){
@@ -27,9 +27,10 @@ class CodingLanguages extends React.Component  {
     });
   }
 
-  formSubmit(event) {
+  async formSubmit(event) {
     event.preventDefault();
     console.log(this.state.selectedOption)
+    await postCodingLanguage(this.state.selectedOption)
   }
 
   render() {
