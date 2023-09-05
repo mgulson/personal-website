@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.98233a0c.css",
-    "main.js": "/personal-website/static/js/main.53c43c92.js",
+    "main.js": "/personal-website/static/js/main.3d009194.js",
     "static/js/787.5809834d.chunk.js": "/personal-website/static/js/787.5809834d.chunk.js",
     "static/media/michael-gulson-headshot.JPG": "/personal-website/static/media/michael-gulson-headshot.453d2a97768e571d7b95.JPG",
     "index.html": "/personal-website/index.html",
     "main.98233a0c.css.map": "/personal-website/static/css/main.98233a0c.css.map",
-    "main.53c43c92.js.map": "/personal-website/static/js/main.53c43c92.js.map",
+    "main.3d009194.js.map": "/personal-website/static/js/main.3d009194.js.map",
     "787.5809834d.chunk.js.map": "/personal-website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98233a0c.css",
-    "static/js/main.53c43c92.js"
+    "static/js/main.3d009194.js"
   ]
 }
