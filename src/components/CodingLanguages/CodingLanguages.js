@@ -31,6 +31,7 @@ class CodingLanguages extends React.Component  {
     event.preventDefault();
     console.log(this.state.selectedOption)
     await postCodingLanguage(this.state.selectedOption)
+    window.location.href += '/results'
   }
 
   render() {

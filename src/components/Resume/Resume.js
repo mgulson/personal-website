@@ -28,8 +28,6 @@ class Resume extends React.Component  {
               <br></br>
               <h2>Projects</h2>
               <Link to='coding-languages'>Coding Languages</Link>
-              <br></br>
-              <br></br>
             </div>
           </div>
         </Grid>

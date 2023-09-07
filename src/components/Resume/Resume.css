@@ -1,0 +1,63 @@
+img.headshot{
+  width: 300px;
+  height: 400px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+h1 {
+  color: #8ac1de;
+}
+
+span {
+  color: white;
+  padding: 5px 0px;
+}
+
+span.dates {
+  color: white;
+  padding: 5px 0px;
+}
+
+h2 {
+  color: #b97fb5;
+}
+
+h3.company{
+  color: #47b19c;
+}
+
+a {
+  text-decoration: none;
+  color: #579dd6; /* Set the color of your links */
+  transition: color 0.3s ease; /* Add a smooth transition effect for color change */
+  padding: 5px 0px
+}
+
+/* Change link color on hover */
+a:hover {
+  color: #1a5c90; /* Set the color of your links on hover */
+}
+
+.mobile-image {
+  /*center */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  padding-left: 100px
+}
+
+.center-text {
+  display: inline-block; 
+  text-align: left;
+}
+
+@media only screen and (max-width: 900px) {
+  .center {
+    text-align: center;
+    padding-left: 10px
+  }
+}

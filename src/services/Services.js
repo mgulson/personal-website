@@ -9,7 +9,7 @@ export function getCodingLanguages(){
 
 export async function postCodingLanguage(id) {
   let data = { "language_id": id}
-  const response = await fetch(codingLanguagesURL + '/votes', {
+  fetch(codingLanguagesURL + '/votes', {
     headers: {
       "Content-Type": "application/json"
     },
@@ -17,8 +17,7 @@ export async function postCodingLanguage(id) {
     mode: 'cors',
     cache: 'default',
     body: JSON.stringify(data),
-  })
-  return await response.json()
+  }).then((response) => response && response.json())
 }
 
 export async function getVoteCount(){
