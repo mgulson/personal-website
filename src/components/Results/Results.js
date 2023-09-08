@@ -1,7 +1,8 @@
 import React from 'react';
 import './Results.css'
 import { getVoteCount, getCodingLanguages } from '../../services/Services';
-import BarChart from 'react-bar-chart'
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
 
 class Results extends React.Component  {
   constructor(props){
@@ -22,7 +23,7 @@ async componentDidMount(){
   convertVotes(voteCount, languages){
     return Object.keys(voteCount).map( (key) => {
       let name = languages.at(Number(key) - 1).name
-      return { text: name, value: voteCount[key]}
+      return { name: name, votes: voteCount[key]}
     }
     )
 
@@ -32,7 +33,22 @@ async componentDidMount(){
 
     return(
       <div className='bar-chart'>
-      { this.state.voteCount ? <BarChart margin ={{ top: 20, right: 20, bottom: 30, left: 40}} width={500} height={500} data={this.state.voteCount} /> : null }
+        <h2 className='results'>Results</h2>
+
+      { 
+      this.state.voteCount ? 
+      <>
+      <BarChart margin ={{ top: 20, right: 20, bottom: 30, left: 40}} width={500} height={500} data={this.state.voteCount}>
+        <CartesianGrid strokeDasharray="4 4" />
+        <XAxis interval={0} dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="votes" fill="#8ac1de" />
+      </BarChart>
+      </>   : null
+      }
+      
       </div>
     )
   }
