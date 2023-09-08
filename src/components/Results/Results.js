@@ -33,12 +33,12 @@ async componentDidMount(){
 
     return(
       <div className='bar-chart'>
-        <h2 className='results'>Results</h2>
+        <h1 className='results'>Results</h1>
 
       { 
       this.state.voteCount ? 
       <>
-      <BarChart margin ={{ top: 20, right: 20, bottom: 30, left: 40}} width={500} height={500} data={this.state.voteCount}>
+      <BarChart margin ={{ top: 20, right: 0, bottom: 0, left: 0}} width={500} height={500} data={this.state.voteCount}>
         <CartesianGrid strokeDasharray="4 4" />
         <XAxis interval={0} dataKey="name" />
         <YAxis />
