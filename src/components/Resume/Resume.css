@@ -23,8 +23,17 @@ h2 {
   color: #b97fb5;
 }
 
+.job-title {
+  text-decoration: none;
+  color: #b97fb5;
+}
+
 h3.company{
   color: #47b19c;
+}
+
+a.email {
+  padding: 0;
 }
 
 a {

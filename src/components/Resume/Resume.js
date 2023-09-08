@@ -15,8 +15,8 @@ class Resume extends React.Component  {
           <div className='center'>
             <div className= 'center-text'>
               <h1> Michael Gulson</h1>
-              <h2> Software Engineer</h2>
-              <a href="mailto: msgulson@gmail.com">msgulson@gmail.com</a>
+              <h2> Software Engineer</h2> &nbsp;
+              <a href="mailto:msgulson@gmail.com">msgulson@gmail.com</a>
               <h2>Work Experience</h2>
               <h3 className='company'>Optoro</h3> <span className='dates'>Nov 2021 - Present</span>
               <h3 className='company'>Faraday Software</h3> <span className='dates'>Sep 2020 - Nov 2021</span>
