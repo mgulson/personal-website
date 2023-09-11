@@ -42,7 +42,6 @@ async componentDidMount(){
         <CartesianGrid strokeDasharray="4 4" />
         <XAxis interval={0} dataKey="name" />
         <YAxis />
-        <Tooltip />
         <Legend />
         <Bar dataKey="votes" fill="#8ac1de" />
       </BarChart>
