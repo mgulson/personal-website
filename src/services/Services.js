@@ -1,15 +1,16 @@
 
-export let codingLanguagesURL = 'https://coding-languages.fly.dev'
+export let flyURL = 'https://coding-languages.fly.dev'
 export let localhostURL = 'http://localhost:5000'
+export let herokuURL = 'https://coding-languages-4240a0180d61.herokuapp.com/'
 
 export function getCodingLanguages(){
-  return fetch(codingLanguagesURL + '/languages').then((response) => response.json())
+  return fetch(herokuURL + '/languages').then((response) => response.json())
 }
 
 
 export async function postCodingLanguage(id) {
   let data = { "language_id": id}
-  fetch(codingLanguagesURL + '/votes', {
+  fetch(herokuURL + '/votes', {
     headers: {
       "Content-Type": "application/json"
     },
@@ -21,5 +22,5 @@ export async function postCodingLanguage(id) {
 }
 
 export async function getVoteCount(){
-  return fetch(codingLanguagesURL + '/votes').then((response) => response.json())
+  return fetch(herokuURL + '/votes').then((response) => response.json())
 }
