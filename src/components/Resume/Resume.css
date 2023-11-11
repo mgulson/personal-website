@@ -67,6 +67,7 @@ a:hover {
 .center-text {
   display: inline-block; 
   text-align: left;
+  margin-bottom: 50px
 }
 
 @media only screen and (max-width: 900px) {
