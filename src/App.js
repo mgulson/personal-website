@@ -2,6 +2,7 @@ import React from 'react';
 import Resume from './components/Resume/Resume';
 import Results from './components/Results/Results'
 import CodingLanguages from './components/CodingLanguages/CodingLanguages';
+import Gpt from './components/Gpt/Gpt'
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
@@ -14,6 +15,7 @@ class App extends React.Component {
           <Route path="/" element={<Resume/>} />
           <Route path="/coding-languages" element={<CodingLanguages/>}/>
           <Route path="/coding-languages/results" element={<Results/>}/>
+          <Route path="/gpt" element={<Gpt/>}/>
         </Routes>
       </BrowserRouter>  
     )
