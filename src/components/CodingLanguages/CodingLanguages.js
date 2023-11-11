@@ -1,7 +1,6 @@
 import React from 'react';
-import { Formik, Field, Form } from "formik";
 import  './CodingLanguages.css'
-import { getCodingLanguages, postCodingLanguage, postCodingLanguageAxios } from '../../services/Services'
+import { getCodingLanguages, postCodingLanguage } from '../../services/codingLanguagesBackend'
 
 class CodingLanguages extends React.Component  {
   constructor(props){

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Results.css'
-import { getVoteCount, getCodingLanguages } from '../../services/Services';
+import { getVoteCount, getCodingLanguages } from '../../services/codingLanguagesBackend';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 
