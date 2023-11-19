@@ -17,3 +17,7 @@ export async function postGpt(prompt) {
     body: JSON.stringify(data),
   }).then((response) => response && response.json())
 }
+
+// export async function GetGptResult(url) {
+//   return fetch(url).then((response) => response.json())
+// }
