@@ -4,7 +4,7 @@ import { postGpt } from '../../services/gptBackend';
 
 class Gpt extends React.Component  {
   async componentDidMount(){
-    let result = await postGpt('hello world')
+    let result = await postGpt('what is chatgpt')
     console.log(result)
   }
   
