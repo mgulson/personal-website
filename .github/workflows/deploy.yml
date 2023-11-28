@@ -26,9 +26,10 @@ jobs:
         REACT_APP_OPENAPI_API_KEY: ${{ secrets.REACT_APP_OPENAPI_API_KEY }}
       run: |
         npm run build
+        
     - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_KEY }}
-          BRANCH: gh-pages
-          FOLDER: dist
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_KEY }}
+        BRANCH: gh-pages
+        FOLDER: dist
