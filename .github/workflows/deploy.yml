@@ -24,6 +24,7 @@ jobs:
     - name: Build
       env:
         REACT_APP_OPENAPI_API_KEY: ${{ secrets.REACT_APP_OPENAPI_API_KEY }}
+        HELLO: 'abc'
       run: |
         npm run build
         
