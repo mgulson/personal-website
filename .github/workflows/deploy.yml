@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@main
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -27,6 +27,3 @@ jobs:
       run: |
         npm run build
         npx gh-pages -d build
-
-    runs:
-      using: 'node20'
