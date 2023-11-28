@@ -15,7 +15,7 @@ class Gpt extends React.Component  {
   };
 
   async componentDidMount(){
-    console.log(process.env.REACT_APP_HELLO)
+    console.log(process.env.REACT_APP_HELLO_WORLD)
     this.setState({showText: false})
   }
 
