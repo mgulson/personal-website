@@ -1,3 +1,9 @@
 .text{
   color: black
 }
+
+.center-gpt {
+  padding-left:  0px;  
+  padding-right: 0px;
+  text-align: center;
+}

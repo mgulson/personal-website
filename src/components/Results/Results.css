@@ -1,4 +1,4 @@
-. {
+.{
   color: white
 }
 
@@ -8,4 +8,10 @@
 
 h1.results {
   color: #b97fb5
+}
+
+.text {
+  padding: 10px;
+  font-size: 14px;
+  width: 150px; /* Adjust the width as needed */
 }
