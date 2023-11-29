@@ -15,18 +15,14 @@ class Gpt extends React.Component  {
   };
 
   async componentDidMount(){
-    console.log(process.env)
     this.setState({showText: false})
   }
 
   async formSubmit(event) {
-    console.log(this.state)
     event.preventDefault();
     let result = await postGpt(this.state.inputValue)
     let answer = result?.choices[0]?.message?.content
-    console.log(this.state)
     this.setState({showText: true, answer})
-    console.log(this.state)
   }
   
   render() {

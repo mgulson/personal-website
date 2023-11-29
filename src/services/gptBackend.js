@@ -7,7 +7,6 @@ export let openapiURL = "https://api.openai.com/v1/chat/completions"
 export let API_KEY = process.env.REACT_APP_OPENAPI_API_KEY
 
 export async function postGpt(prompt) {
-  console.log(API_KEY)
 
   let data = {
     "model": "gpt-3.5-turbo",
