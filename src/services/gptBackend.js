@@ -1,4 +1,3 @@
-import Replicate from "replicate"
 
 export let michaelgptjavaURL = 'http://localhost:8080/gpt/post'
 
