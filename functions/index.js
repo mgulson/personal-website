@@ -28,7 +28,8 @@ exports.openaipost = onRequest(
            {"role": "system", "content": "You are a helpful assistant"},
           {"role": "user", "content": prompt }
           ],
-      "temperature": 0.7 
+      "temperature": 0.7,
+      "max_tokens": 50
     }
     response = await fetch(openapiURL, {
       headers: {
