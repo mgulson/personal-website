@@ -1,27 +1,20 @@
 
-export let michaelgptjavaURL = 'http://localhost:8080/gpt/post'
+// export let michaelgptjavaURL = 'http://localhost:8080/gpt/post'
 
-export let openapiURL = "https://api.openai.com/v1/chat/completions"
+// export let openapiURL = "https://api.openai.com/v1/chat/completions"
 
-export let API_KEY = process.env.REACT_APP_OPENAPI_API_KEY
+export let firebaseOpenAIURL = "https://openaipost-aqa7nos75a-uc.a.run.app"
+
 
 export async function postGpt(prompt) {
-
-  let data = {
-    "model": "gpt-3.5-turbo",
-    "messages": [
-         {"role": "system", "content": "You are a helpful assistant"},
-        {"role": "user", "content": prompt}
-        ],
-    "temperature": 0.7, }
-  return fetch(openapiURL, {
-    headers: {
-      "Content-Type": "application/json",
-      'Authorization': `Bearer ${API_KEY}`
-    },
+  let data = { "prompt": prompt} 
+  return fetch(firebaseOpenAIURL, {
     method: "POST",
     mode: 'cors',
     cache: 'default',
+    headers: {
+      'Content-Type': 'application/json'
+    },
     body: JSON.stringify(data),
   }).then((response) => response && response.json())
 }

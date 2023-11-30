@@ -10,7 +10,7 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 class App extends React.Component {
   render() {
     return(
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter >
         <Routes>
           <Route path="/" element={<Resume/>} />
           <Route path="/coding-languages" element={<CodingLanguages/>}/>
