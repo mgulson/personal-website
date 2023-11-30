@@ -7,7 +7,7 @@
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
 
-const {onRequest, onCall} = require("firebase-functions/v2/https");
+const {onRequest} = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
 let openapiURL = "https://api.openai.com/v1/chat/completions"
 // Create and deploy your first functions

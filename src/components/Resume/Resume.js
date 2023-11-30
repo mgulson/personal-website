@@ -27,7 +27,9 @@ class Resume extends React.Component  {
               <a href="https://www.github.com/michaelgulson" target="_blank">Github</a>
               <br></br>
               <h2>Projects</h2>
-              <Link to='coding-languages'>Coding Languages</Link>
+              <Link to='coding-languages'>Coding Languages</Link>  
+              <br></br><br></br>
+              <Link to='gpt'>MichaelGpt</Link>
             </div>
           </div>
         </Grid>
