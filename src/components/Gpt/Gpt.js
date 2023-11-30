@@ -46,7 +46,7 @@ class Gpt extends React.Component  {
         {
           this.state.showText ? 
           <>
-            <p>{this.state.answer}</p>
+            <p className='answer'>{this.state.answer}</p>
           </> :
           <></>
         }

@@ -7,3 +7,8 @@
   padding-right: 0px;
   text-align: center;
 }
+
+p.answer {
+  padding-left: 50px;
+  padding-right: 50px;
+}
