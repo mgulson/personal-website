@@ -1,10 +1,17 @@
-import React from 'react';
+import {useState} from 'react';
 import Headshot from '../../img/michael-gulson-headshot.JPG'
 import { Link } from 'react-router-dom'
 import Grid from '@mui/material/Grid'
 import './Resume.css'
-class Resume extends React.Component  {
-  render() {
+
+export default function Resume(){
+  const [count, setCount] = useState(0)
+
+
+  function handleClick() {
+    setCount(count + 1)
+  }
+
     return(
       <>
       <Grid container spacing={2}>
@@ -30,13 +37,15 @@ class Resume extends React.Component  {
               <Link to='coding-languages'>Coding Languages</Link>  
               <br></br><br></br>
               <Link to='gpt'>MichaelGpt</Link>
+              <br></br>
+              <button onClick={handleClick}>hello world</button>
+              <br></br>
+              {count}
             </div>
           </div>
         </Grid>
       </Grid>
     </>
-    )
-  }
+  )
 }
 
-export default Resume;
