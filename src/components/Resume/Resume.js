@@ -1,5 +1,5 @@
 import React from 'react';
-import Headshot from '../../img/michael-gulson-headshot.JPG'
+import Headshot from '../../img/michael-gulson-headshot-circle.png'
 import { Link } from 'react-router-dom'
 import Grid from '@mui/material/Grid'
 import './Resume.css'
