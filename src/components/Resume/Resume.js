@@ -1,4 +1,6 @@
 import Headshot from '../../img/michael-gulson-headshot-circle.png'
+import GithubLogo from '../../img/github-logo-clean.png'
+import LinkedinLogo from '../../img/linkedinlogo.png'
 import {useState} from 'react';
 import { Link } from 'react-router-dom'
 import Grid from '@mui/material/Grid'
@@ -24,14 +26,14 @@ export default function Resume(){
               <h1> Michael Gulson</h1>
               <h2> Software Engineer</h2> &nbsp;
               <a href="mailto:msgulson@gmail.com">msgulson@gmail.com</a>
-              <h2>Work Experience</h2>
-              <h3 className='company'>Optoro</h3> <span className='dates'>Nov 2021 - Present</span>
-              <h3 className='company'>Faraday Software</h3> <span className='dates'>Sep 2020 - Nov 2021</span>
-              <h3 className='company'>Special Fitness</h3> <span className='dates'>May 2020 - Sep 2020</span>
               <br></br><br></br>
-              <a href="https://www.linkedin.com/in/michael-gulson-578270111" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/michael-gulson-578270111" target="_blank">
+                <img className="github" src={LinkedinLogo}></img>
+              </a>
               <span>                                                          </span>
-              <a href="https://www.github.com/michaelgulson" target="_blank">Github</a>
+              <a href="https://www.github.com/mgulson" target="_blank">
+                <img className="github" src={GithubLogo}></img>
+              </a>
               <br></br>
               <h2>Projects</h2>
               <Link to='coding-languages'>Coding Languages</Link>  

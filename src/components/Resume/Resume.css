@@ -10,7 +10,7 @@ img.headshot{
 }
 
 h1 {
-  color: #8ac1de;
+  color: #e7e9ea;
 }
 
 span {
@@ -24,7 +24,7 @@ span.dates {
 }
 
 h2 {
-  color: #b97fb5;
+  color: #b0bec5;
 }
 
 .job-title {
@@ -67,6 +67,11 @@ a:hover {
   display: inline-block; 
   text-align: left;
   margin-bottom: 50px
+}
+
+.github {
+  height: 50px;
+  width: 50px;
 }
 
 @media only screen and (max-width: 900px) {
