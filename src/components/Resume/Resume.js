@@ -37,10 +37,6 @@ export default function Resume(){
               <Link to='coding-languages'>Coding Languages</Link>  
               <br></br><br></br>
               <Link to='gpt'>MichaelGpt</Link>
-              <br></br>
-              <button onClick={handleClick}>hello world</button>
-              <br></br>
-              {count}
             </div>
           </div>
         </Grid>
