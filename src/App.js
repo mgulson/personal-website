@@ -6,7 +6,7 @@ import Gpt from './components/Gpt/Gpt'
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, } from "react-router-dom";
 import Demo from './components/Demo/Demo';
 class App extends React.Component {
   render() {
