@@ -24,7 +24,7 @@ export default function Resume(){
           <div className='center'>
             <div className= 'center-text'>
               <h1> Michael Gulson</h1>
-              <h2> software engineer</h2> &nbsp;
+              <h2> Software Engineer</h2> &nbsp;
               <a href="mailto:msgulson@gmail.com">msgulson@gmail.com</a>
               <br></br><br></br>
               <a href="https://www.linkedin.com/in/michael-gulson-578270111" target="_blank">
