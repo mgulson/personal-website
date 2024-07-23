@@ -2,6 +2,7 @@ import React from 'react';
 import './Results.css'
 import { getVoteCount, getCodingLanguages } from '../../services/codingLanguagesBackend';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { HARDCODED, resultsHardcoded, codingLanguagesHardcoded } from '../../services/harcoded'
 
 
 class Results extends React.Component  {
@@ -11,12 +12,16 @@ class Results extends React.Component  {
   }
   
 async componentDidMount(){
-  let voteCount = await getVoteCount()
-  let languages = await getCodingLanguages()
-  console.log(voteCount)
+  let voteCount, languages
+  if(HARDCODED) {
+    voteCount = resultsHardcoded
+    languages = codingLanguagesHardcoded
+  } else {    
+    voteCount = await getVoteCount()
+    languages = await getCodingLanguages()
+  }
 
   voteCount = this.convertVotes(voteCount, languages)
-  console.log(voteCount)
   this.setState({ voteCount })
 }
 

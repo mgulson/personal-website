@@ -1,6 +1,7 @@
 import React from 'react';
 import  './CodingLanguages.css'
-import { getCodingLanguages, postCodingLanguage } from '../../services/codingLanguagesBackend'
+import { postCodingLanguage } from '../../services/codingLanguagesBackend'
+import { codingLanguagesHardcoded } from '../../services/harcoded'
 
 class CodingLanguages extends React.Component  {
   constructor(props){
@@ -9,7 +10,7 @@ class CodingLanguages extends React.Component  {
   }
 
   async componentDidMount(){
-    let result = await getCodingLanguages()
+    let result = codingLanguagesHardcoded
 
     this.setState({ languages: result, selectedLanguageId: null } )
     this.onValueChange = this.onValueChange.bind(this);
