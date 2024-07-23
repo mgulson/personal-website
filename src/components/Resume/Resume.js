@@ -23,8 +23,8 @@ export default function Resume(){
         <Grid item xs={12} md={8}>
           <div className='center'>
             <div className= 'center-text'>
-              <h1> Pichsineerat</h1>
-              <h2> my baby</h2> &nbsp;
+              <h1> Michael Gulson</h1>
+              <h2> software engineer</h2> &nbsp;
               <a href="mailto:msgulson@gmail.com">msgulson@gmail.com</a>
               <br></br><br></br>
               <a href="https://www.linkedin.com/in/michael-gulson-578270111" target="_blank">
