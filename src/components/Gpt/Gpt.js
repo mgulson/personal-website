@@ -37,7 +37,7 @@ class Gpt extends React.Component  {
               type="text"
               value={this.state.inputValue}
               onChange={this.handleInputChange}
-              placeholder="Enter text"
+              placeholder="Enter Prompt"
             />
           <br></br>
           <button className='form-submit' type="submit">
