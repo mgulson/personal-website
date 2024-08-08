@@ -30,6 +30,8 @@ class Gpt extends React.Component  {
       <>
       <div className='center-gpt'>
         <h1>MichaelGpt</h1>
+        <p className='warning'> Please be patient. Engineers are working on performance improvements.</p>
+        <br></br>
         <form onSubmit={this.formSubmit}>
           <input className='text'
               type="text"
