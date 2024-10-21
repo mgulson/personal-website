@@ -1,9 +1,9 @@
 const HARDCODED = true
 
 const codingLanguagesHardcoded = [
-{id: 1, name: "javascript"},
+{id: 1, name: "python"},
 {id: 2, name: "java"},
-{id: 3, name: "python"},
+{id: 3, name: "javascript"},
 {id: 4, name: "c"},
 {id: 5, name: "c++"},
 {id: 6, name: "c#"}]

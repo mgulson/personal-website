@@ -1,0 +1,119 @@
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type Mutation {
+  createLanguage(input: CreateLanguageInput!): language
+  deleteLanguage(input: DeleteLanguageInput!): language
+  updateLanguage(input: UpdateLanguageInput!): language
+}
+
+type Query {
+  getLanguage(id: Int!): language
+  listLanguages(filter: TableLanguageFilterInput, limit: Int, nextToken: String): languageConnection
+}
+
+type Subscription {
+  onCreateLanguage(id: Int, name: String): language @aws_subscribe(mutations : ["createLanguage"])
+  onDeleteLanguage(id: Int, name: String): language @aws_subscribe(mutations : ["deleteLanguage"])
+  onUpdateLanguage(id: Int, name: String): language @aws_subscribe(mutations : ["updateLanguage"])
+}
+
+type language {
+  id: Int
+  name: String
+}
+
+type languageConnection {
+  items: [language]
+  nextToken: String
+}
+
+input CreateLanguageInput {
+  id: Int!
+  name: String
+}
+
+input DeleteLanguageInput {
+  id: Int!
+}
+
+input ModelSizeInput {
+  between: [Int]
+  eq: Int
+  ge: Int
+  gt: Int
+  le: Int
+  lt: Int
+  ne: Int
+}
+
+input TableBooleanFilterInput {
+  attributeExists: Boolean
+  eq: Boolean
+  ne: Boolean
+}
+
+input TableFloatFilterInput {
+  attributeExists: Boolean
+  between: [Float]
+  eq: Float
+  ge: Float
+  gt: Float
+  le: Float
+  lt: Float
+  ne: Float
+}
+
+input TableIDFilterInput {
+  attributeExists: Boolean
+  beginsWith: ID
+  between: [ID]
+  contains: ID
+  eq: ID
+  ge: ID
+  gt: ID
+  le: ID
+  lt: ID
+  ne: ID
+  notContains: ID
+  size: ModelSizeInput
+}
+
+input TableIntFilterInput {
+  attributeExists: Boolean
+  between: [Int]
+  eq: Int
+  ge: Int
+  gt: Int
+  le: Int
+  lt: Int
+  ne: Int
+}
+
+input TableLanguageFilterInput {
+  id: TableIntFilterInput
+  name: TableStringFilterInput
+}
+
+input TableStringFilterInput {
+  attributeExists: Boolean
+  beginsWith: String
+  between: [String]
+  contains: String
+  eq: String
+  ge: String
+  gt: String
+  le: String
+  lt: String
+  ne: String
+  notContains: String
+  size: ModelSizeInput
+}
+
+input UpdateLanguageInput {
+  id: Int!
+  name: String
+}
