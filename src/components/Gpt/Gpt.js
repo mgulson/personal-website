@@ -16,6 +16,7 @@ function Gpt() {
 
   useEffect(() => {
     setShowText(false);
+    postGpt('wake up')
   }, []);
 
   const formSubmit = async (event) => {
