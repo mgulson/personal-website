@@ -28,7 +28,7 @@ async componentDidMount(){
 
   convertVotes(voteCount, languages){
     return Object.keys(voteCount).map( (key) => {
-      let name = languages.at(Number(key) - 1).name
+      let name = languages.at(Number(key) - 1)?.name
       return { name: name, votes: voteCount[key]}
     }
     )

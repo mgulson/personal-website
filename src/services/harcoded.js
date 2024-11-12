@@ -6,7 +6,9 @@ const codingLanguagesHardcoded = [
 {id: 3, name: "python"},
 {id: 4, name: "c"},
 {id: 5, name: "c++"},
-{id: 6, name: "ruby"}]
+{id: 6, name: "ruby"},
+]
+
 const resultsHardcoded = {
   1: 5,
   2: 6,
