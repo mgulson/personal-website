@@ -19,6 +19,7 @@ async componentDidMount(){
   } else {    
     voteCount = await getVoteCount()
     languages = await getCodingLanguages()
+    console.log(languages)
   }
 
   voteCount = this.convertVotes(voteCount, languages)
