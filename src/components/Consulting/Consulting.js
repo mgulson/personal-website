@@ -127,7 +127,8 @@ function Consulting() {
         <p>
           Have a project in mind? Reach out and let’s discuss your goals.
         </p>
-        <button style={styles.button}>Contact Me</button>
+        <a href="mailto:msgulson@gmail.com">msgulson@gmail.com</a>
+        {/* <button style={styles.button}>Contact Me</button> */}
       </section>
     </div>
   );
