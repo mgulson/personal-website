@@ -1,13 +1,14 @@
 # Michael Gulson personal website
 In this website I show my work experience and contact information
 
-The website is deployed using github pages using
+## Deploys
 
-`npm run deploy`
+### Deploy command
+firebase deploy
 
-Hosted at this address
-[https://gullman99.github.io/personal-website/](https://gullman99.github.io/personal-website/)
-
+### Troubleshooting
+firebase logout
+firebase login
 
 ## Available Scripts
 
